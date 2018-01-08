@@ -1,9 +1,6 @@
 {
   "name": "heydjreact",
   "version": "0.1.0",
-  "engines": {
-    "node": "v8.6.0"
-  },
   "private": true,
   "devDependencies": {
     "ava": "^0.23.0",
@@ -37,23 +34,17 @@
     "typeface-shrikhand": "0.0.44"
   },
   "ava": {
-    "require": [
-      "babel-register"
-    ],
+    "require": ["babel-register"],
     "babel": "inherit"
   },
   "babel": {
-    "presets": [
-      "@ava/stage-4",
-      "react"
-    ]
+    "presets": ["@ava/stage-4", "react"]
   },
   "proxy": "http://localhost:3099",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "ava",
-    "eject": "react-scripts eject",
-    "heroku-postbuild": "npm run build"
+    "eject": "react-scripts eject"
   }
 }
